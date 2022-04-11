@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="edu.co.icesi.reto1_youtube.LoginActivity">
+    <!--android:background="@drawable/back_ui" -->
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/yt_logo" />
+
+    <EditText
+        android:id="@+id/loginId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFFFFF"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#EBFFFFFF"
+        android:textColorHint="#97F3F3F3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginId"
+        android:layout_alignStart="@+id/loginId"
+        android:layout_alignEnd="@+id/loginId"
+        android:layout_marginStart="-20dp"
+        android:layout_marginEnd="-20dp"
+        android:backgroundTint="#F3F3F3"
+        android:textColorHint="#79FBFBFB"
+        app:boxStrokeColor="#F4EFEF"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FFFFFF"
+
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#EFEFEF"
+            android:textColorHint="#ADFFFFFF"
+            android:textColorLink="#C3E4E4E4" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/forgotpass_btn"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textIL"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="207dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="1dp"
+        android:background="@android:color/transparent"
+
+
+        android:text="Forgot password?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/loginBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotpass_btn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="20dp"
+        android:background="#FF0223"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+
+        app:cornerRadius="20dp" />
+
+
+    <CheckBox
+        android:id="@+id/remindId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtnId"
+        android:layout_alignStart="@+id/loginBtnId"
+        android:layout_alignEnd="@+id/loginBtnId"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="-9dp"
+        android:layout_marginRight="30dp"
+        android:buttonTint="#FAFAFA"
+        android:minHeight="48dp"
+        android:text="Remember me"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textInformationError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remindId"
+        android:layout_alignStart="@+id/remindId"
+        android:layout_alignEnd="@+id/remindId"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#FF0000"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/signupBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textInformationError"
+        android:layout_alignEnd="@+id/textInformationError"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-9dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
+
+
+        android:text="Don't have an account? Sign up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17dp" />
+
+</RelativeLayout>
